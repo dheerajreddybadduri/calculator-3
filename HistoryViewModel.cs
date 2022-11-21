@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -9,9 +9,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-  public class HistoryViewModel:INotifyPropertyChanged
-  {
-   public class HistoryViewModel:INotifyPropertyChanged
+    public class HistoryViewModel:INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -33,8 +31,8 @@ namespace Calculator
         {
             get => ExpressionHistory;
         }
-       
+
         public void OnPropertyChanged([CallerMemberName] string name = "") => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
 
-  }
+    }
 }
