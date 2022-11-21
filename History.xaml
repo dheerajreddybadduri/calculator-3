@@ -4,17 +4,7 @@
              x:Class="Calculator.History"
              Title="History" BackgroundColor="AntiqueWhite">
     <VerticalStackLayout>
-        <Label 
-            Text="History of calculated expressions: "
-            VerticalOptions="Start" 
-            FontSize="Header"
-            
-            
-            TextColor="Black"
-            HorizontalOptions="Start" />
-        <ListView  ItemsSource="{Binding historyExpressions}" BackgroundColor="AntiqueWhite">
 
 
-        </ListView>
     </VerticalStackLayout>
 </ContentPage>
