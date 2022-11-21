@@ -15,7 +15,12 @@ namespace Calculator
 
         private ObservableCollection<String> ExpressionHistory;
 
-
+        public void Add(String calculation)
+        {
+            ExpressionHistory.Add(calculation);
+            OnPropertyChanged("historyExpressions");
+            OnPropertyChanged();
+        }
         public ObservableCollection<String> historyExpressions
         {
             get => ExpressionHistory;
