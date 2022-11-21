@@ -27,10 +27,6 @@ namespace Calculator
             OnPropertyChanged();
         }
 
-        public ObservableCollection<String> historyExpressions
-        {
-            get => ExpressionHistory;
-        }
 
         public void OnPropertyChanged([CallerMemberName] string name = "") => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
 
