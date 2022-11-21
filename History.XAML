@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.History"
+             Title="History" BackgroundColor="AntiqueWhite">
+    <VerticalStackLayout>
+        <Label 
+            Text="History of calculated expressions: "
+
+            VerticalOptions="Start" 
+            FontSize="Header"
+            
+            
+            TextColor="Black"
+            HorizontalOptions="Start" />
+
+        <ListView  ItemsSource="{Binding historyExpressions}" BackgroundColor="AntiqueWhite">
+
+
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

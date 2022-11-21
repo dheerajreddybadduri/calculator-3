@@ -13,6 +13,7 @@ namespace Calculator
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+
         private ObservableCollection<String> ExpressionHistory;
         public HistoryViewModel()
         {
@@ -30,7 +31,7 @@ namespace Calculator
         {
             get => ExpressionHistory;
         }
-
+        
         public void OnPropertyChanged([CallerMemberName] string name = "") => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
 
     }
