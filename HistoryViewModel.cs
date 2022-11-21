@@ -14,6 +14,10 @@ namespace Calculator
         public event PropertyChangedEventHandler PropertyChanged;
 
         private ObservableCollection<String> ExpressionHistory;
+        public HistoryViewModel()
+        {
+            ExpressionHistory = new ObservableCollection<String>();
+        }
 
         public void Add(String calculation)
         {
