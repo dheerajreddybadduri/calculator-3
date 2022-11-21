@@ -23,7 +23,7 @@ namespace Calculator
         {
             ExpressionHistory.Add(calculation);
             OnPropertyChanged("historyExpressions");
-            
+            OnPropertyChanged();
         }
 
         public ObservableCollection<String> historyExpressions
