@@ -15,10 +15,6 @@ namespace Calculator
 
         private ObservableCollection<String> ExpressionHistory;
 
-        public HistoryViewModel()
-        {
-            ExpressionHistory = new ObservableCollection<String>();
-        }
 
         public void Add(String calculation)
         {
