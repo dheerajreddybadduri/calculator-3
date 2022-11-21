@@ -9,24 +9,5 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    public class HistoryViewModel:INotifyPropertyChanged
-    {
-        public event PropertyChangedEventHandler PropertyChanged;
 
-        private ObservableCollection<String> ExpressionHistory;
-
-        public void Add(String calculation)
-        {
-            ExpressionHistory.Add(calculation);
-            OnPropertyChanged("historyExpressions");
-            OnPropertyChanged();
-        }
-        public ObservableCollection<String> historyExpressions
-        {
-            get => ExpressionHistory;
-        }
-
-        public void OnPropertyChanged([CallerMemberName] string name = "") => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-
-    }
 }
